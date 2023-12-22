@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "stargate"
+version = "0.1.0"
+description = "Basketball-project"
+authors = ["Igor Leschenko"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pika = "^1.3.2"
+ruff = "^0.1.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+venv-dir = "venv"
+
+[tool.ruff]
+fix = true
+unsafe-fixes = true
+line-length = 120
+select = ["ALL"]
+ignore = ["D1", "D203", "D213", "FA102", "ANN101"]
+
+[tool.ruff.isort]
+no-lines-before = ["standard-library", "local-folder"]
+known-third-party = []
+known-local-folder = ["whole_app"]
