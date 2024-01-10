@@ -2,7 +2,7 @@
 
 - поднятие rabbitmq в докер
 
-`docker run --rm -p 5672:5672 -p 15672:15672 rabbitmq:3.10.7-management
+`docker run --rm -p 5672:5672 -p 15672:15672 -d rabbitmq:3.10.7-management
 `
 
 - /src/queue - основной класс для работы с очередями
